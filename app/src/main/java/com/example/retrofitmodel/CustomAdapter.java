@@ -9,13 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import com.example.retrofitmodel.modelusers.Users;
+
+import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter <CustomAdapter.ViewHolder>{
     Context context;
-    ArrayList<ResObj>user;
+    List<Users>user;
 
-    public CustomAdapter(Context context, ArrayList<ResObj> resObj) {
+    public CustomAdapter(Context context, List<Users> resObj) {
         this.user= resObj;
         this.context=context;
     }

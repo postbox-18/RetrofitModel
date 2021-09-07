@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,11 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<ResObj> res=response.body();
                 Log.e(TAG,"Response"+res);
 
-
-
-                progressBar.dismiss();
+                /*progressBar.dismiss();
                 CustomAdapter customAdapter = new CustomAdapter(MainActivity.this,res);
-                recyclerView.setAdapter(customAdapter);
+                recyclerView.setAdapter(customAdapter);*/
 
             }
 

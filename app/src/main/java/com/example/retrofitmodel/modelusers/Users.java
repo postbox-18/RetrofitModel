@@ -1,20 +1,17 @@
-package com.example.retrofitmodel;
+package com.example.retrofitmodel.modelusers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class ResObj  {
+public class Users {
     String name;
     String id;
     String email;
 
-    public ResObj(String name, String email, String id) {
+    public Users(String name, String email, String id) {
         this.name= name;
         this.email= email;
         this.id= id;
     }
 
-    public ResObj() {
+    public Users() {
 
     }
 
@@ -41,5 +38,5 @@ public class ResObj  {
     public void setId(String id) {
         this.id = id;
     }
-
 }
+
